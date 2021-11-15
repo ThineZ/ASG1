@@ -1,0 +1,7 @@
+#container {
+    display: grid;
+}
+
+#nav {
+    background-color: rgb(37, 37, 37);
+}
