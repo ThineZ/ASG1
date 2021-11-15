@@ -5,23 +5,26 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Portfolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='normalize.css'>
+    <link rel='stylesheet' type='text/css' href='main.css'>
+    <link rel='stylesheet' type='text/css' href='normalize.css'>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <script src='main.js'></script>
 </head>
 <body>
     <div id="container">
-        <div class="header">
-            <nav class="nav">
-                <h3 class="logo">My Space</h3>
-                <ul class="nav-links">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT US</a></li>
-                </ul>
-            </nav>
-        </div>
+        <header>
+            <h1 class="logo">My Space</h1>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                </nav>
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+        </header>
     </div>
 </body>
 </html>
