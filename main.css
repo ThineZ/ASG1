@@ -1,7 +1,32 @@
-#container {
-    display: grid;
+:root {
+    --background: #1F1F1F;
 }
 
-#nav {
-    background-color: rgb(37, 37, 37);
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Nav Styles */
+
+.header {
+    background-color: var(--background);
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.logo {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 50%;
 }
