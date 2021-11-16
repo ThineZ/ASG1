@@ -181,7 +181,7 @@ nav a:hover {
 #container {
     display: grid;
     height: 100vh;
-    grid-template-columns: 0.4fr 1fr;
+    grid-template-columns: 0.3fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
     "back back1";
@@ -236,7 +236,7 @@ nav a:hover {
         grid-area: back1;
     }
 }
-
+/* Animate Text */
 @keyframes aniBack {
     from {
         background-position: 0 50%;
@@ -246,6 +246,7 @@ nav a:hover {
     }
 }
 
+/* Disable all animation (For people who don't like animation )*/
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
     animation-delay: -1ms !important;
