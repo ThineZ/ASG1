@@ -1,6 +1,7 @@
 :root {
     --background: #303030;
     --hover: rgb(200, 255, 0);
+    --main: #FF7575;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
@@ -170,5 +171,56 @@ nav a:hover {
 
     nav a:hover::before {
         transform: scale(1,1);
+    }
+}
+
+/* Main Background */
+
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "back back1";
+}
+
+.back {
+    background-image: url("res/Color_square_cm.gif");
+    background-position: center;
+    background-repeat: round;
+    filter: brightness(70%);
+    grid-area: back;
+}
+
+.back1 {
+    background: var(--main);
+    grid-area: back1;
+}
+
+/* Moblie Main */
+
+@media screen and (max-width: 768px) {
+    #container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr;
+        grid-template-areas: 
+        "back1"
+        "back";
+    }
+
+    .back {
+        background-image: url("res/Color_square_cm.gif");
+        background-position: center;
+        background-repeat: round;
+        filter: brightness(70%);
+        grid-area: back;
+    }
+
+    .back1 {
+        background: var(--main);
+        grid-area: back1;
     }
 }
