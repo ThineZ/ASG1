@@ -5,6 +5,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -131,15 +132,16 @@ nav a:hover {
     }
 
     .logo {
-        grid-column: 2 / 3;
+        grid-column: 2 / 1;
     }
 
     nav {
         all: unset;
-        grid-column: 3 / 4;
+        grid-column: 2 / 5;
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        margin: 0px 200px 0px 0px;
     }
 
     nav ul {
@@ -188,13 +190,18 @@ nav a:hover {
 .back {
     background-image: url("res/Color_square_cm.gif");
     background-position: center;
-    background-repeat: round;
+    background-repeat: repeat;
     filter: brightness(70%);
     grid-area: back;
 }
 
 .back1 {
     background: var(--main);
+    background-image: url("res/text.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 35vh;
+    animation: aniBack 5500ms linear infinite alternate;
     grid-area: back1;
 }
 
@@ -214,13 +221,39 @@ nav a:hover {
     .back {
         background-image: url("res/Color_square_cm.gif");
         background-position: center;
-        background-repeat: round;
+        background-repeat: repeat;
         filter: brightness(70%);
         grid-area: back;
     }
 
     .back1 {
         background: var(--main);
+        background-image: url("res/text.png");
+        background-position: center;
+        background-repeat: repeat;
+        background-size: 30vh;
+        animation: aniBack 5500ms linear infinite alternate;
         grid-area: back1;
     }
+}
+
+@keyframes aniBack {
+    from {
+        background-position: 0 50%;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
 }
