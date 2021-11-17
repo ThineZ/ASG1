@@ -201,7 +201,7 @@ nav a:hover {
     background-position: center;
     background-repeat: repeat;
     background-size: 35vh;
-    animation: aniBack 8500ms linear infinite alternate;
+    animation: aniBack 15000ms linear infinite alternate;
     grid-area: back1;
 }
 
