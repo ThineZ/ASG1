@@ -258,3 +258,30 @@ nav a:hover {
     transition-delay: 0s !important;
   }
 }
+
+
+/* Second Page */
+
+#container1 {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "about projects contacts";
+}
+
+.about {
+    grid-area: about;
+    background-color:aqua ;
+}
+
+.projects {
+    grid-area: projects;
+    background-color:chocolate ;
+}
+
+.contacts {
+    grid-area: contacts;
+    background-color:blueviolet ;
+}
