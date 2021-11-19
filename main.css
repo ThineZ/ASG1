@@ -236,6 +236,7 @@ nav a:hover {
         grid-area: back1;
     }
 }
+
 /* Animate Text */
 @keyframes aniBack {
     from {
@@ -264,8 +265,7 @@ nav a:hover {
 
 #container1 {
     display: flex;
-    background-color: blue;
-    min-height: 95vh;
+    height: 93.5vh;
     padding: 0px;
     margin: 0px;
 }
@@ -273,34 +273,94 @@ nav a:hover {
 .about {
     background-color: beige;
     width: 33.5%;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .projects {
     background-color: blueviolet;
     width: 33.5%;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .contacts {
     background-color: cadetblue;
     width: 33.5%;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 /* Animation Hover */
 
 .about:hover {
     width: 100vw;
-    background-color:cadetblue;
+    background-color:rgb(64, 236, 241);
+    transition: 1s;
 }
 
 .projects:hover {
     width: 100vw;
-    background-color: beige;
+    background-color: rgb(255, 255, 111);
+    transition: 1s;
 }
 
 .contacts:hover {
     width: 100vw;
-    background-color: blueviolet;
+    background-color: rgb(71, 2, 134);
+    transition: 1s;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #container1 {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        max-height: 93vh;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .about {
+        all: unset;
+        background-color: burlywood;
+        height: 30vh;
+        transition: 1s;
+    }
+
+    .projects {
+        all: unset;
+        background-color: blueviolet;
+        height: 31vh;
+        transition: 1s;
+    }
+
+    .contacts {
+        all: unset;
+        background-color: chocolate;
+        height: 30vh;
+        transition: 1s;
+    }
+
+    /* Animate Hover Mobile */
+
+    .about:hover {
+        all: unset;
+        background-color: chocolate;
+        height: 100vh;
+        transition: 0.5s;
+    }
+
+    .projects:hover {
+        all: unset;
+        background-color: burlywood;
+        height: 100vh;
+        transition: 0.5s;
+    }
+
+    .contacts:hover {
+        all: unset;
+        background-color: blueviolet;
+        height: 100vh;
+        transition: 0.5s;
+    }
 }
