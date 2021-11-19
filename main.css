@@ -306,6 +306,19 @@ nav a:hover {
     z-index: 888;
 }
 
+.intro span {
+    width: 400px;
+    height: 200px;
+    color: white;
+    z-index: 9999;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px 10px 10px 10px;
+    display: none;
+}
+
 /* Animation Hover */
 
 .about:hover {
@@ -331,6 +344,12 @@ nav a:hover {
     filter: brightness(50%);
     transition: 1s;
 }
+
+.intro:hover span {
+    display: block;
+}
+
+/* span hover hidden */
 
 .about:hover span {
     display: none;
