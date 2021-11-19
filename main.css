@@ -271,43 +271,70 @@ nav a:hover {
 }
 
 .about {
-    background-color: beige;
+    background-image: url("res/1.jpg");
+    background-position: center;
+    filter: brightness(50%);
     width: 33.5%;
     transition: 0.5s;
 }
 
 .projects {
-    background-color: blueviolet;
+    background-image: url("res/3.jpg");
+    background-position: center;
+    filter: brightness(50%);
     width: 33.5%;
     transition: 0.5s;
 }
 
 .contacts {
-    background-color: cadetblue;
+    background-image: url("res/2.jpg");
+    background-position: center;
+    filter: brightness(50%);
     width: 33.5%;
     transition: 0.5s;
+}
+
+.placeholder {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    position: relative;
+    left: 250px;
+    top: 550px;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    z-index: 888;
 }
 
 /* Animation Hover */
 
 .about:hover {
     width: 100vw;
-    background-color:rgb(64, 236, 241);
+    background-image: url("res/1.jpg");
+    background-position: center;
+    filter: brightness(50%);
     transition: 1s;
 }
 
 .projects:hover {
     width: 100vw;
-    background-color: rgb(255, 255, 111);
+    background-image: url("res/3.jpg");
+    background-position: center;
+    filter: brightness(50%);
     transition: 1s;
 }
 
 .contacts:hover {
     width: 100vw;
-    background-color: rgb(71, 2, 134);
+    background-image: url("res/2.jpg");
+    background-position: center;
+    filter: brightness(50%);
     transition: 1s;
 }
 
+.placeholder:hover {
+    display: none;
+}
 
 
 @media screen and (max-width: 768px) {
