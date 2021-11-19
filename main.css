@@ -332,10 +332,17 @@ nav a:hover {
     transition: 1s;
 }
 
-.placeholder:hover {
+.about:hover span {
     display: none;
 }
 
+.projects:hover span {
+    display: none;
+}
+
+.contacts:hover span {
+    display: none;
+}
 
 @media screen and (max-width: 768px) {
     #container1 {
