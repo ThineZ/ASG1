@@ -263,25 +263,44 @@ nav a:hover {
 /* Second Page */
 
 #container1 {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "about projects contacts";
+    display: flex;
+    background-color: blue;
+    min-height: 95vh;
+    padding: 0px;
+    margin: 0px;
 }
 
 .about {
-    grid-area: about;
-    background-color:aqua ;
+    background-color: beige;
+    width: 33.5%;
+    transition: 1s;
 }
 
 .projects {
-    grid-area: projects;
-    background-color:chocolate ;
+    background-color: blueviolet;
+    width: 33.5%;
+    transition: 1s;
 }
 
 .contacts {
-    grid-area: contacts;
-    background-color:blueviolet ;
+    background-color: cadetblue;
+    width: 33.5%;
+    transition: 1s;
+}
+
+/* Animation Hover */
+
+.about:hover {
+    width: 100vw;
+    background-color:cadetblue;
+}
+
+.projects:hover {
+    width: 100vw;
+    background-color: beige;
+}
+
+.contacts:hover {
+    width: 100vw;
+    background-color: blueviolet;
 }
