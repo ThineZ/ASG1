@@ -264,156 +264,45 @@ nav a:hover {
 /* Second Page */
 
 #container1 {
+    height: 100vh;
     display: flex;
-    height: 93.5vh;
-    padding: 0px;
-    margin: 0px;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    transition: all .5s;
+}
+
+section:hover {
+    flex: 2;
+}
+
+section h1 {
+    color:White;
+    padding: 12px 32px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 55px;
 }
 
 .about {
-    background-image: url("res/1.jpg");
-    background-position: center;
-    filter: brightness(50%);
-    width: 33.5%;
-    transition: 0.5s;
+    background: url('res/1.jpg') rgba(0,0,0,0.6);;
+    background-size: cover;
+    background-blend-mode: multiply;
 }
 
 .projects {
-    background-image: url("res/3.jpg");
-    background-position: center;
-    filter: brightness(50%);
-    width: 33.5%;
-    transition: 0.5s;
+    background: url('res/3.jpg') rgba(0,0,0,0.6);
+    background-size: cover;
+    background-blend-mode: multiply;
 }
 
 .contacts {
-    background-image: url("res/2.jpg");
-    background-position: center;
-    filter: brightness(50%);
-    width: 33.5%;
-    transition: 0.5s;
-}
-
-.placeholder {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    position: relative;
-    left: 250px;
-    top: 550px;
-    font-size: 50px;
-    font-weight: bold;
-    font-style: italic;
-    z-index: 888;
-}
-
-.intro span {
-    width: 400px;
-    height: 200px;
-    color: white;
-    z-index: 9999;
-    font-size: 40px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    padding: 10px 10px 10px 10px;
-    display: none;
-}
-
-/* Animation Hover */
-
-.about:hover {
-    width: 100vw;
-    background-image: url("res/1.jpg");
-    background-position: center;
-    filter: brightness(50%);
-    transition: 1s;
-}
-
-.projects:hover {
-    width: 100vw;
-    background-image: url("res/3.jpg");
-    background-position: center;
-    filter: brightness(50%);
-    transition: 1s;
-}
-
-.contacts:hover {
-    width: 100vw;
-    background-image: url("res/2.jpg");
-    background-position: center;
-    filter: brightness(50%);
-    transition: 1s;
-}
-
-.intro:hover span {
-    display: block;
-}
-
-/* span hover hidden */
-
-.about:hover span {
-    display: none;
-}
-
-.projects:hover span {
-    display: none;
-}
-
-.contacts:hover span {
-    display: none;
-}
-
-@media screen and (max-width: 768px) {
-    #container1 {
-        all: unset;
-        display: flex;
-        flex-direction: column;
-        max-height: 93vh;
-        padding: 0px;
-        margin: 0px;
-    }
-
-    .about {
-        all: unset;
-        background-color: burlywood;
-        height: 30vh;
-        transition: 1s;
-    }
-
-    .projects {
-        all: unset;
-        background-color: blueviolet;
-        height: 31vh;
-        transition: 1s;
-    }
-
-    .contacts {
-        all: unset;
-        background-color: chocolate;
-        height: 30vh;
-        transition: 1s;
-    }
-
-    /* Animate Hover Mobile */
-
-    .about:hover {
-        all: unset;
-        background-color: chocolate;
-        height: 100vh;
-        transition: 0.5s;
-    }
-
-    .projects:hover {
-        all: unset;
-        background-color: burlywood;
-        height: 100vh;
-        transition: 0.5s;
-    }
-
-    .contacts:hover {
-        all: unset;
-        background-color: blueviolet;
-        height: 100vh;
-        transition: 0.5s;
-    }
+    background: url('res/2.jpg') rgba(0,0,0,0.6);;
+    background-size: cover;
+    background-blend-mode: multiply;
 }
