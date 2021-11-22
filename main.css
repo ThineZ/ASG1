@@ -306,3 +306,18 @@ section h1 {
     background-size: cover;
     background-blend-mode: multiply;
 }
+
+/* Hover span none */
+
+.about:hover h1{
+    display:none;
+}
+
+.projects:hover h1 {
+    display: none;
+}
+
+.contacts:hover h1 {
+    display: none;
+}
+
