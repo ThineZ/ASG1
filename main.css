@@ -263,9 +263,9 @@ nav a:hover {
 
 /* Second Page */
 
-#container1 {
+.page {
+    display:flex;
     height: 100vh;
-    display: flex;
 }
 
 section {
@@ -309,8 +309,8 @@ section h1 {
 
 /* Hover span none */
 
-.about:hover h1{
-    display:none;
+.about:hover h1  {
+    display: none;
 }
 
 .projects:hover h1 {
@@ -321,3 +321,9 @@ section h1 {
     display: none;
 }
 
+@media screen and (max-width: 768px) {
+    .page {
+        display: flex;
+        flex-direction: column;
+    }
+}
