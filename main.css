@@ -365,6 +365,20 @@ section h1 {
   background-color: aqua;
   flex-direction: column;
 }
+
+input[type="text"] {
+  border-radius: 5px;
+  width: 70%;
+  height: 8%;
+  border-style: none;
+}
+
+input[type="email"] {
+  border-radius: 5px;
+  width: 70%;
+  height: 8%;
+  border-style: none;
+}
 /* Hover span none */
 
 .about:hover h1 {
